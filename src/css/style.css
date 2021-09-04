@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto.ttf); }
+.logo {
+  display: block;
+  background-image: url("../img/logo.png");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .logo__container {
+    height: 100vh; }
+  .logo__top-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 39px; }
+  .logo__utility {
+    display: flex; }
+  .logo__hours {
+    display: flex; }
+    .logo__hours-icon {
+      height: 24px;
+      width: 24px;
+      background-image: url("../img/access_time.png"); }
+    .logo__hours-text {
+      margin-left: 14px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: 0.15px;
+      color: #FFFFFF; }
+  .logo__phone {
+    margin-left: 30px;
+    display: flex; }
+    .logo__phone-icon {
+      height: 24px;
+      width: 24px;
+      background-image: url("../img/phone.png"); }
+    .logo__phone-text {
+      margin-left: 14px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: 0.15px;
+      color: #FFFFFF; }
+  .logo__btn {
+    display: flex;
+    align-items: center;
+    width: 211px;
+    height: 40px;
+    background: #C40B0B;
+    margin-left: 30px; }
+    .logo__btn-text {
+      width: 168px;
+      text-align: center;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      border-radius: 2px; }
+    .logo__btn-icon {
+      width: 43px;
+      height: 40px;
+      background-color: #E30B0B; }
+  .logo__menu {
+    margin-top: 28px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF; }
+    .logo__menu-items {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.15px;
+      color: #02133C; }
+    .logo__menu-item {
+      margin-left: 40px; }
+    .logo__menu-utility {
+      display: flex; }
+    .logo__menu-search {
+      margin-right: 24px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/search.png"); }
+    .logo__menu-shop {
+      position: relative;
+      margin-right: 48px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/shopping.png"); }
+  .logo__schet {
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+    background: #C40B0B;
+    right: -1em;
+    top: -1em;
+    border-radius: 50%;
+    padding: 0.1rem; }
+
+.container {
+  max-width: 1020px;
+  margin: 0px auto; }
+
+/*# sourceMappingURL=style.css.map */
