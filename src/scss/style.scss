@@ -12,14 +12,26 @@ html,body{
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
-
+    max-width: 100%;
+    overflow-x: hidden;
+    background: #F5F5F5;
 }
 @font-face {
     font-family: Roboto; 
     src: url(Roboto.ttf); 
 }
 
+.container{
+    max-width: 1020px;
+    margin: 0px auto;
+}
+.layout{
+    max-width: 846px;
+    margin: 0px auto;
+}
+
 .logo{
+    z-index: 4;
     display: block;
     background-image: url("../img/logo.png");
     height: 100vh;
@@ -38,6 +50,7 @@ html,body{
         display: flex;
     }
     &__hours{
+        margin-right: 30px;
         display: flex;
         &-icon{
             height: 24px;
@@ -56,7 +69,7 @@ html,body{
         }
     }
     &__phone{
-        margin-left: 30px;
+        margin-right: 30px;
         display: flex;
         &-icon{
             height: 24px;
@@ -75,31 +88,7 @@ html,body{
         }
     }
     &__btn{
-        display: flex;
-        align-items: center;
-        width: 211px;
-        height: 40px;
-        background: #C40B0B;
-        margin-left: 30px;
-        &-text{
-            width: 168px;
-            text-align: center;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 24px;
-            letter-spacing: 0.15px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            border-radius: 2px;
-        }
-        &-icon{
-            width: 43px;
-            height: 40px;
-            background-color: #E30B0B;
-            
-        }
+        margin-top: 48px;
     }
     &__menu{
         margin-top: 28px;
@@ -163,9 +152,143 @@ html,body{
         border-radius: 50%;
         padding: 0.1rem;
     }
+    &__text{
+        margin-top: 126px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFFFFF;
+    }
 
 }
-.container{
-    max-width: 1020px;
-    margin: 0px auto;
+.btn{
+    display: flex;
+    align-items: center;
+    width: 211px;
+    height: 40px;
+    background: #C40B0B;
+    &-text{
+        width: 168px;
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border-radius: 2px;
+    }
+    &-icon{
+        width: 43px;
+        height: 40px;
+        background-color: #E30B0B;
+        
+    }
 }
+
+.about{
+    z-index: 5;
+    margin-top: -80px;
+    &__container{
+        // background-image: url(../img/Gears.png);
+        height: 700px;
+        background-color: #ffffff;
+        position:relative;
+    }
+    &__fon{
+        position: absolute;
+        right: 0;
+    }
+    &__micro-title{
+        padding-top: 100px;
+    }
+    &__title{
+        max-width: 583px;
+        margin-top: 33px;
+    }
+    &__text{
+        margin-top: 36px;
+    }
+    &__img{
+        & img{
+            position:absolute;
+        }
+        margin-top: 54px;
+        margin-bottom: -120px;
+    }
+
+}
+
+.promise{
+    margin-top:230px;
+    &__title{
+        margin-top: 33px;
+    }
+    &__cards{
+        margin-top: 72px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card{
+        display: flex;
+        &-text{
+            margin-left: 23px;
+            max-width: 235px;
+        }
+    }
+    &__text{
+        margin-top: 20px;
+    }
+}
+.video{
+    width: 1920px;
+}
+
+.title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #02133C;
+}
+.text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+}
+.micro-title{
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #4B4B4B;
+    &-img{
+        width: 17px;
+        height: 16px;
+        background-image: url("../img/Overline Mark.svg");
+        margin-right: 16px;
+    }
+}
+.mini-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    color: #02133C;
+}
+

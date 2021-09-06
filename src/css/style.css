@@ -1,148 +1,381 @@
+/* line 1, ../../Documents/GitHub/Car/src/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
-  border: 0; }
+  border: 0;
+}
 
+/* line 7, ../../Documents/GitHub/Car/src/scss/style.scss */
 :focus, :active {
-  outline: none; }
+  outline: none;
+}
 
+/* line 8, ../../Documents/GitHub/Car/src/scss/style.scss */
 a:focus, a:active {
-  outline: none; }
+  outline: none;
+}
 
+/* line 11, ../../Documents/GitHub/Car/src/scss/style.scss */
 html, body {
   height: 100%;
   width: 100%;
-  font-size: 100%; }
+  font-size: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #F5F5F5;
+}
 
 @font-face {
   font-family: Roboto;
-  src: url(Roboto.ttf); }
+  src: url(Roboto.ttf);
+}
+
+/* line 24, ../../Documents/GitHub/Car/src/scss/style.scss */
+.container {
+  max-width: 1020px;
+  margin: 0px auto;
+}
+
+/* line 28, ../../Documents/GitHub/Car/src/scss/style.scss */
+.layout {
+  max-width: 846px;
+  margin: 0px auto;
+}
+
+/* line 33, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo {
+  z-index: 4;
   display: block;
   background-image: url("../img/logo.png");
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
-  background-size: cover; }
-  .logo__container {
-    height: 100vh; }
-  .logo__top-content {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 39px; }
-  .logo__utility {
-    display: flex; }
-  .logo__hours {
-    display: flex; }
-    .logo__hours-icon {
-      height: 24px;
-      width: 24px;
-      background-image: url("../img/access_time.png"); }
-    .logo__hours-text {
-      margin-left: 14px;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 22px;
-      letter-spacing: 0.15px;
-      color: #FFFFFF; }
-  .logo__phone {
-    margin-left: 30px;
-    display: flex; }
-    .logo__phone-icon {
-      height: 24px;
-      width: 24px;
-      background-image: url("../img/phone.png"); }
-    .logo__phone-text {
-      margin-left: 14px;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 22px;
-      letter-spacing: 0.15px;
-      color: #FFFFFF; }
-  .logo__btn {
-    display: flex;
-    align-items: center;
-    width: 211px;
-    height: 40px;
-    background: #C40B0B;
-    margin-left: 30px; }
-    .logo__btn-text {
-      width: 168px;
-      text-align: center;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 24px;
-      letter-spacing: 0.15px;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      border-radius: 2px; }
-    .logo__btn-icon {
-      width: 43px;
-      height: 40px;
-      background-color: #E30B0B; }
-  .logo__menu {
-    margin-top: 28px;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #FFFFFF; }
-    .logo__menu-items {
-      height: 40px;
-      display: flex;
-      align-items: center;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 22px;
-      text-align: center;
-      letter-spacing: 0.15px;
-      color: #02133C; }
-    .logo__menu-item {
-      margin-left: 40px; }
-    .logo__menu-utility {
-      display: flex; }
-    .logo__menu-search {
-      margin-right: 24px;
-      width: 24px;
-      height: 24px;
-      background-image: url("../img/search.png"); }
-    .logo__menu-shop {
-      position: relative;
-      margin-right: 48px;
-      width: 24px;
-      height: 24px;
-      background-image: url("../img/shopping.png"); }
-  .logo__schet {
-    height: 16px;
-    width: 16px;
-    text-align: center;
-    position: absolute;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 22px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.15px;
-    color: #FFFFFF;
-    background: #C40B0B;
-    right: -1em;
-    top: -1em;
-    border-radius: 50%;
-    padding: 0.1rem; }
+  background-size: cover;
+}
 
-.container {
-  max-width: 1020px;
-  margin: 0px auto; }
+/* line 41, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__container {
+  height: 100vh;
+}
+
+/* line 44, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__top-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 39px;
+}
+
+/* line 49, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__utility {
+  display: flex;
+}
+
+/* line 52, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__hours {
+  margin-right: 30px;
+  display: flex;
+}
+
+/* line 55, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__hours-icon {
+  height: 24px;
+  width: 24px;
+  background-image: url("../img/access_time.png");
+}
+
+/* line 60, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__hours-text {
+  margin-left: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+}
+
+/* line 71, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__phone {
+  margin-right: 30px;
+  display: flex;
+}
+
+/* line 74, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__phone-icon {
+  height: 24px;
+  width: 24px;
+  background-image: url("../img/phone.png");
+}
+
+/* line 79, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__phone-text {
+  margin-left: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+}
+
+/* line 90, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__btn {
+  margin-top: 48px;
+}
+
+/* line 93, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu {
+  margin-top: 28px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+/* line 101, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-items {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #02133C;
+}
+
+/* line 114, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-item {
+  margin-left: 40px;
+}
+
+/* line 117, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-utility {
+  display: flex;
+}
+
+/* line 120, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-search {
+  margin-right: 24px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/search.png");
+}
+
+/* line 126, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-shop {
+  position: relative;
+  margin-right: 48px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/shopping.png");
+}
+
+/* line 134, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__schet {
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  background: #C40B0B;
+  right: -1em;
+  top: -1em;
+  border-radius: 50%;
+  padding: 0.1rem;
+}
+
+/* line 155, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__text {
+  margin-top: 126px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+
+/* line 166, ../../Documents/GitHub/Car/src/scss/style.scss */
+.btn {
+  display: flex;
+  align-items: center;
+  width: 211px;
+  height: 40px;
+  background: #C40B0B;
+}
+
+/* line 172, ../../Documents/GitHub/Car/src/scss/style.scss */
+.btn-text {
+  width: 168px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 2px;
+}
+
+/* line 185, ../../Documents/GitHub/Car/src/scss/style.scss */
+.btn-icon {
+  width: 43px;
+  height: 40px;
+  background-color: #E30B0B;
+}
+
+/* line 193, ../../Documents/GitHub/Car/src/scss/style.scss */
+.about {
+  z-index: 5;
+  margin-top: -80px;
+}
+
+/* line 196, ../../Documents/GitHub/Car/src/scss/style.scss */
+.about__container {
+  height: 700px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* line 202, ../../Documents/GitHub/Car/src/scss/style.scss */
+.about__fon {
+  position: absolute;
+  right: 0;
+}
+
+/* line 206, ../../Documents/GitHub/Car/src/scss/style.scss */
+.about__micro-title {
+  padding-top: 100px;
+}
+
+/* line 209, ../../Documents/GitHub/Car/src/scss/style.scss */
+.about__title {
+  max-width: 583px;
+  margin-top: 33px;
+}
+
+/* line 213, ../../Documents/GitHub/Car/src/scss/style.scss */
+.about__text {
+  margin-top: 36px;
+}
+
+/* line 216, ../../Documents/GitHub/Car/src/scss/style.scss */
+.about__img {
+  margin-top: 54px;
+  margin-bottom: -120px;
+}
+
+/* line 217, ../../Documents/GitHub/Car/src/scss/style.scss */
+.about__img img {
+  position: absolute;
+}
+
+/* line 226, ../../Documents/GitHub/Car/src/scss/style.scss */
+.promise {
+  margin-top: 230px;
+}
+
+/* line 228, ../../Documents/GitHub/Car/src/scss/style.scss */
+.promise__title {
+  margin-top: 33px;
+}
+
+/* line 231, ../../Documents/GitHub/Car/src/scss/style.scss */
+.promise__cards {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 236, ../../Documents/GitHub/Car/src/scss/style.scss */
+.promise__card {
+  display: flex;
+}
+
+/* line 238, ../../Documents/GitHub/Car/src/scss/style.scss */
+.promise__card-text {
+  margin-left: 23px;
+  max-width: 235px;
+}
+
+/* line 243, ../../Documents/GitHub/Car/src/scss/style.scss */
+.promise__text {
+  margin-top: 20px;
+}
+
+/* line 247, ../../Documents/GitHub/Car/src/scss/style.scss */
+.video {
+  width: 1920px;
+}
+
+/* line 251, ../../Documents/GitHub/Car/src/scss/style.scss */
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #02133C;
+}
+
+/* line 259, ../../Documents/GitHub/Car/src/scss/style.scss */
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #4B4B4B;
+}
+
+/* line 268, ../../Documents/GitHub/Car/src/scss/style.scss */
+.micro-title {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #4B4B4B;
+}
+
+/* line 279, ../../Documents/GitHub/Car/src/scss/style.scss */
+.micro-title-img {
+  width: 17px;
+  height: 16px;
+  background-image: url("../img/Overline Mark.svg");
+  margin-right: 16px;
+}
+
+/* line 286, ../../Documents/GitHub/Car/src/scss/style.scss */
+.mini-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  color: #02133C;
+}
 
 /*# sourceMappingURL=style.css.map */
