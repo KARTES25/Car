@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width">
 	    <link rel="stylesheet" href="css/style.css" type="text/css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="src/JS/slider.js"></script>
+        <script src="js/video.js"></script>
 
         <title>CARMASTER</title>
     </head>
@@ -33,11 +33,11 @@
                 </div>
                 <div class="logo__menu">
                     <div class="logo__menu-items">
-                        <div class="logo__menu-item">Services</div>
+                        <div class="logo__menu-item logo__menu-item-parent">Services <div class="logo__menu-item-icon"></div> </div>
                         <div class="logo__menu-item">Specials</div>
                         <div class="logo__menu-item">Estimates</div>
                         <div class="logo__menu-item">Reviews</div>
-                        <div class="logo__menu-item">Shop</div>
+                        <div class="logo__menu-item">Shop <div class="logo__menu-item-icon"></div> </div>
                         <div class="logo__menu-item">About</div>
                     </div>
                     <div class="logo__menu-utility">
@@ -113,7 +113,17 @@
 
         <div class="video">
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/eUj-ErCqdIE"></iframe> -->
-            <video controls src="video/Kia_K5.mp4"></video>
+            <video src="video/Kia_K5.mp4" class="video__content"></video>
+            <div class="video__utility">
+                <div class="video__utility-item">
+                    <div class="video__text">Nemo enim ipsam voluptatem quia voluptas in proident</div>
+                    <div class="video__nav">
+                        <div class="video__border">
+                            <div class="video__play"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </body>
