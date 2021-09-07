@@ -172,6 +172,14 @@ html,body{
         line-height: 56px;
         color: #FFFFFF;
     }
+    &__btn{
+        width: 211px;
+        height: 44px;
+        &-menu{
+            width: 211px;
+            height: 40px;
+        }
+    }
 
 }
 .btn{
@@ -179,15 +187,13 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 211px;
-    height: 40px;
     background: #C40B0B;
     position: relative;
     transition: all 500ms ease; 
     &:before{
         z-index: 0;
         content:'';
-        height: 40px;
+        height: 100%;
         width: 35px;
         right: 0;
         top: 0;
@@ -199,8 +205,8 @@ html,body{
     }
 
     &-text{
+        margin-left: 15px;
         z-index: 1;
-        width: 168px;
         text-align: center;
         font-family: Roboto;
         font-style: normal;
@@ -217,11 +223,8 @@ html,body{
         display: flex;
         align-items: center;
         justify-content: center;
-        // transform-origin: top left;
-        // transform: skew(-15deg, 0);
-
         width: 35px;
-        height: 40px;
+        height: 100%;
         background-color: #E30B0B;
 
         
@@ -342,6 +345,132 @@ html,body{
         background-image: url(../img/play_arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
+    }
+}
+
+.service{
+    min-height: 1218px;
+    position: relative;
+    &__top-fon{
+        position: absolute;
+        left: 0;
+    }
+    &__bottom-fon{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &__micro-title{
+        padding-top: 108px;
+    }
+    &__title{
+        margin-top: 33px;
+    }
+    &__items{
+        margin-left: -12px;
+        margin-right: -12px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+    &__item{
+        display: flex;
+        transition: all 1s ease;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 12px 12px 12px 12px;
+        text-align: center;
+        z-index: 1;
+        background: #FFFFFF;
+        width: 324px;
+        height: 340px;
+        &-img{
+            width: 63px;
+            height: 63px;
+        }
+        &:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: all 1s ease;
+        }
+    }
+
+    &__mini-title{
+        margin-top: 33px;
+    }
+    &__text{
+        max-width: 235px;
+        margin-top: 20px;
+    }
+    &__btn{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 54px;
+        width: 145px;
+        height: 44px;
+    }
+}
+
+.recording{
+    padding-top: 1px;
+    min-height: 980px;
+    position: relative;
+    background: #02133C;
+    &__top-fon{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__bottom-fon{
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__items{
+        z-index: 2;
+    }
+    &__layout{
+        z-index: 2;
+        max-width: 472px;
+        margin: 0 auto;
+    }
+    &__inputs{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        margin-top: 48px;
+        margin-left: -12px;
+        margin-right: -12px;
+        & input{
+            margin: 12px 12px 12px 12px;
+            width: 224px;
+            height: 48px;
+            background: #F5F5F5;
+        }
+        & textarea{
+            margin-left: 12px;
+            width: 470px;
+            height: 180px;
+            resize: none;
+            background: #F5F5F5;
+        }
+    }
+    &__form{
+        margin-top: 130px;
+        background: #FFFFFF;
+        width: 585px;
+        height: 640px;
+    }
+    &__title{
+        padding-top: 76px;
+    }
+    &__btn{
+        margin-right: 0;
+        margin-top: 39px;
+        width: 145px;
+        height: 44px;
     }
 }
 
