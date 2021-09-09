@@ -44,46 +44,52 @@ html, body {
 
 /* line 33, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo {
-  z-index: 4;
   display: block;
   background-image: url("../img/logo.png");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 41, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 50, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__container {
   height: 100vh;
 }
 
-/* line 44, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 53, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__top-content {
   display: flex;
   justify-content: space-between;
   padding-top: 39px;
 }
 
-/* line 49, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 58, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__utility {
   display: flex;
 }
 
-/* line 52, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 61, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__hours {
   margin-right: 30px;
   display: flex;
 }
 
-/* line 55, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 64, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__hours-icon {
   height: 24px;
   width: 24px;
   background-image: url("../img/access_time.png");
 }
 
-/* line 60, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 69, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__hours-text {
   margin-left: 14px;
   font-family: Roboto;
@@ -95,20 +101,20 @@ html, body {
   color: #FFFFFF;
 }
 
-/* line 71, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 80, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__phone {
   margin-right: 30px;
   display: flex;
 }
 
-/* line 74, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 83, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__phone-icon {
   height: 24px;
   width: 24px;
   background-image: url("../img/phone.png");
 }
 
-/* line 79, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 88, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__phone-text {
   margin-left: 14px;
   font-family: Roboto;
@@ -120,12 +126,12 @@ html, body {
   color: #FFFFFF;
 }
 
-/* line 90, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 99, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__btn {
   margin-top: 48px;
 }
 
-/* line 93, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 102, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__menu {
   margin-top: 28px;
   height: 60px;
@@ -136,7 +142,7 @@ html, body {
   background: #FFFFFF;
 }
 
-/* line 101, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 110, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__menu-items {
   height: 40px;
   display: flex;
@@ -151,15 +157,15 @@ html, body {
   color: #02133C;
 }
 
-/* line 114, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 123, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__menu-item {
-  display: flex;
+  position: relative;
   cursor: pointer;
   align-items: center;
   margin-left: 37px;
 }
 
-/* line 119, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 129, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__menu-item-icon {
   background-image: url(../img/expand_more.png);
   margin-left: 1px;
@@ -167,12 +173,37 @@ html, body {
   height: 16px;
 }
 
-/* line 126, ../../Documents/GitHub/Car/src/scss/style.scss */
-.logo__menu-utility {
-  display: flex;
+/* line 135, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-item img {
+  margin-bottom: -3px;
+  width: 16px;
+  height: 16px;
 }
 
-/* line 129, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 141, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-dopItems {
+  z-index: 5;
+  width: auto;
+  height: auto;
+  text-align: left;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: none;
+}
+
+/* line 151, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-dopItem {
+  margin: 10px;
+}
+
+/* line 155, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-utility {
+  display: flex;
+  align-items: center;
+}
+
+/* line 159, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__menu-search {
   cursor: pointer;
   margin-right: 24px;
@@ -181,7 +212,24 @@ html, body {
   background-image: url("../img/search.png");
 }
 
-/* line 136, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 167, ../../Documents/GitHub/Car/src/scss/style.scss */
+.logo__menu-inpat {
+  height: 40px;
+  margin-right: 24px;
+  width: 200px;
+  background: #F5F5F5;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #02133C;
+  display: none;
+  transition: all 500ms ease;
+}
+
+/* line 183, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__menu-shop {
   cursor: pointer;
   position: relative;
@@ -191,7 +239,7 @@ html, body {
   background-image: url("../img/shopping.png");
 }
 
-/* line 145, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 192, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__schet {
   height: 16px;
   width: 16px;
@@ -212,7 +260,7 @@ html, body {
   padding: 0.1rem;
 }
 
-/* line 166, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 213, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__text {
   margin-top: 126px;
   font-family: Roboto;
@@ -223,19 +271,19 @@ html, body {
   color: #FFFFFF;
 }
 
-/* line 175, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 222, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__btn {
   width: 211px;
   height: 44px;
 }
 
-/* line 178, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 225, ../../Documents/GitHub/Car/src/scss/style.scss */
 .logo__btn-menu {
   width: 211px;
   height: 40px;
 }
 
-/* line 185, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 232, ../../Documents/GitHub/Car/src/scss/style.scss */
 .btn {
   cursor: pointer;
   display: flex;
@@ -246,7 +294,7 @@ html, body {
   transition: all 500ms ease;
 }
 
-/* line 193, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 240, ../../Documents/GitHub/Car/src/scss/style.scss */
 .btn:before {
   z-index: 0;
   content: '';
@@ -261,7 +309,7 @@ html, body {
   transform-origin: top left;
 }
 
-/* line 207, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 254, ../../Documents/GitHub/Car/src/scss/style.scss */
 .btn-text {
   margin-left: 15px;
   z-index: 1;
@@ -277,7 +325,7 @@ html, body {
   border-radius: 2px;
 }
 
-/* line 221, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 268, ../../Documents/GitHub/Car/src/scss/style.scss */
 .btn-icon {
   z-index: 1;
   display: flex;
@@ -288,105 +336,105 @@ html, body {
   background-color: #E30B0B;
 }
 
-/* line 233, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 280, ../../Documents/GitHub/Car/src/scss/style.scss */
 .btn:hover:before {
   width: 100%;
   transform: none;
 }
 
-/* line 238, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 285, ../../Documents/GitHub/Car/src/scss/style.scss */
 .about {
   z-index: 5;
   margin-top: -80px;
 }
 
-/* line 241, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 288, ../../Documents/GitHub/Car/src/scss/style.scss */
 .about__container {
   height: 700px;
   background-color: #ffffff;
   position: relative;
 }
 
-/* line 247, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 294, ../../Documents/GitHub/Car/src/scss/style.scss */
 .about__fon {
   position: absolute;
   right: 0;
 }
 
-/* line 251, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 298, ../../Documents/GitHub/Car/src/scss/style.scss */
 .about__micro-title {
   padding-top: 100px;
 }
 
-/* line 254, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 301, ../../Documents/GitHub/Car/src/scss/style.scss */
 .about__title {
   max-width: 583px;
   margin-top: 33px;
 }
 
-/* line 258, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 305, ../../Documents/GitHub/Car/src/scss/style.scss */
 .about__text {
   margin-top: 36px;
 }
 
-/* line 261, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 308, ../../Documents/GitHub/Car/src/scss/style.scss */
 .about__img {
   margin-top: 54px;
   margin-bottom: -120px;
 }
 
-/* line 262, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 309, ../../Documents/GitHub/Car/src/scss/style.scss */
 .about__img img {
   position: absolute;
 }
 
-/* line 271, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 318, ../../Documents/GitHub/Car/src/scss/style.scss */
 .promise {
   margin-top: 230px;
 }
 
-/* line 273, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 320, ../../Documents/GitHub/Car/src/scss/style.scss */
 .promise__title {
   margin-top: 33px;
 }
 
-/* line 276, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 323, ../../Documents/GitHub/Car/src/scss/style.scss */
 .promise__cards {
   margin-top: 72px;
   display: flex;
   justify-content: space-between;
 }
 
-/* line 281, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 328, ../../Documents/GitHub/Car/src/scss/style.scss */
 .promise__card {
   display: flex;
 }
 
-/* line 283, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 330, ../../Documents/GitHub/Car/src/scss/style.scss */
 .promise__card-text {
   margin-left: 23px;
   max-width: 235px;
 }
 
-/* line 288, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 335, ../../Documents/GitHub/Car/src/scss/style.scss */
 .promise__text {
   margin-top: 20px;
 }
 
-/* line 292, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 339, ../../Documents/GitHub/Car/src/scss/style.scss */
 .video {
   margin-top: 120px;
   position: relative;
 }
 
-/* line 295, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 342, ../../Documents/GitHub/Car/src/scss/style.scss */
 .video video {
   width: 100%;
   height: auto;
   max-height: 100%;
 }
 
-/* line 300, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 347, ../../Documents/GitHub/Car/src/scss/style.scss */
 .video__utility {
   top: 0;
   left: 50%;
@@ -397,7 +445,7 @@ html, body {
   max-width: 411px;
 }
 
-/* line 309, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 356, ../../Documents/GitHub/Car/src/scss/style.scss */
 .video__text {
   font-family: Roboto;
   font-style: normal;
@@ -407,7 +455,7 @@ html, body {
   color: #FFFFFF;
 }
 
-/* line 318, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 365, ../../Documents/GitHub/Car/src/scss/style.scss */
 .video__nav {
   cursor: pointer;
   display: flex;
@@ -420,7 +468,7 @@ html, body {
   border-radius: 999px;
 }
 
-/* line 329, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 376, ../../Documents/GitHub/Car/src/scss/style.scss */
 .video__border {
   display: flex;
   align-items: center;
@@ -432,7 +480,7 @@ html, body {
   border-radius: 999px;
 }
 
-/* line 339, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 386, ../../Documents/GitHub/Car/src/scss/style.scss */
 .video__play {
   z-index: 3;
   width: 85.56px;
@@ -444,36 +492,36 @@ html, body {
   background-position: center;
 }
 
-/* line 351, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 398, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service {
   min-height: 1218px;
   position: relative;
 }
 
-/* line 354, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 401, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__top-fon {
   position: absolute;
   left: 0;
 }
 
-/* line 358, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 405, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__bottom-fon {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-/* line 363, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 410, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__micro-title {
   padding-top: 108px;
 }
 
-/* line 366, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 413, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__title {
   margin-top: 33px;
 }
 
-/* line 369, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 416, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__items {
   margin-left: -12px;
   margin-right: -12px;
@@ -482,7 +530,7 @@ html, body {
   flex-wrap: wrap;
 }
 
-/* line 376, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 423, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__item {
   display: flex;
   transition: all 1s ease;
@@ -497,30 +545,30 @@ html, body {
   height: 340px;
 }
 
-/* line 388, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 435, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__item-img {
   width: 63px;
   height: 63px;
 }
 
-/* line 392, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 439, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 1s ease;
 }
 
-/* line 398, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 445, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__mini-title {
   margin-top: 33px;
 }
 
-/* line 401, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 448, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__text {
   max-width: 235px;
   margin-top: 20px;
 }
 
-/* line 405, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 452, ../../Documents/GitHub/Car/src/scss/style.scss */
 .service__btn {
   margin-left: auto;
   margin-right: auto;
@@ -529,7 +577,7 @@ html, body {
   height: 44px;
 }
 
-/* line 414, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 461, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording {
   padding-top: 1px;
   min-height: 980px;
@@ -537,35 +585,78 @@ html, body {
   background: #02133C;
 }
 
-/* line 419, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 466, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__top-fon {
-  z-index: 1;
   position: absolute;
   top: 0;
   right: 0;
 }
 
-/* line 425, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 471, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__bottom-fon {
-  z-index: 1;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-/* line 431, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 476, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__items {
-  z-index: 2;
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-/* line 434, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 483, ../../Documents/GitHub/Car/src/scss/style.scss */
+.recording__info {
+  z-index: 1;
+  width: 324px;
+  height: 280px;
+}
+
+/* line 487, ../../Documents/GitHub/Car/src/scss/style.scss */
+.recording__info-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 496, ../../Documents/GitHub/Car/src/scss/style.scss */
+.recording__info-bigText {
+  margin-top: 46px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 56px;
+  text-align: center;
+  color: #C40B0B;
+}
+
+/* line 506, ../../Documents/GitHub/Car/src/scss/style.scss */
+.recording__info-text {
+  margin-top: 46px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 517, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__layout {
-  z-index: 2;
   max-width: 472px;
   margin: 0 auto;
 }
 
-/* line 439, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 521, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__inputs {
   display: flex;
   justify-content: space-between;
@@ -575,37 +666,55 @@ html, body {
   margin-right: -12px;
 }
 
-/* line 446, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 529, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__inputs input {
+  border-left: 23px solid #F5F5F5;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #959595;
   margin: 12px 12px 12px 12px;
-  width: 224px;
+  width: 201px;
   height: 48px;
   background: #F5F5F5;
 }
 
-/* line 452, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 543, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__inputs textarea {
+  border-left: 23px solid #F5F5F5;
+  border-right: 23px solid #F5F5F5;
+  border-top: 17px solid #F5F5F5;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #959595;
   margin-left: 12px;
-  width: 470px;
+  width: 426px;
   height: 180px;
   resize: none;
   background: #F5F5F5;
 }
 
-/* line 460, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 561, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__form {
-  margin-top: 130px;
+  z-index: 1;
   background: #FFFFFF;
   width: 585px;
   height: 640px;
 }
 
-/* line 466, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 567, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__title {
   padding-top: 76px;
 }
 
-/* line 469, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 570, ../../Documents/GitHub/Car/src/scss/style.scss */
 .recording__btn {
   margin-right: 0;
   margin-top: 39px;
@@ -613,17 +722,294 @@ html, body {
   height: 44px;
 }
 
-/* line 477, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 578, ../../Documents/GitHub/Car/src/scss/style.scss */
+.customers {
+  min-height: 550px;
+}
+
+/* line 580, ../../Documents/GitHub/Car/src/scss/style.scss */
+.customers__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 583, ../../Documents/GitHub/Car/src/scss/style.scss */
+.customers__content-text {
+  width: 324px;
+}
+
+/* line 587, ../../Documents/GitHub/Car/src/scss/style.scss */
+.customers__title {
+  margin-top: 33px;
+}
+
+/* line 590, ../../Documents/GitHub/Car/src/scss/style.scss */
+.customers__info {
+  padding-top: 49px;
+  width: 324px;
+  height: 291px;
+  background: #FFFFFF;
+}
+
+/* line 596, ../../Documents/GitHub/Car/src/scss/style.scss */
+.customers__layout {
+  max-width: 235px;
+  margin: 0 auto;
+}
+
+/* line 600, ../../Documents/GitHub/Car/src/scss/style.scss */
+.customers__img {
+  width: 48px;
+  height: 48px;
+}
+
+/* line 604, ../../Documents/GitHub/Car/src/scss/style.scss */
+.customers__about {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 609, ../../Documents/GitHub/Car/src/scss/style.scss */
+.customers__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #02133C;
+  margin-left: 17px;
+}
+
+/* line 621, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact {
+  min-height: 608px;
+  background: #02133C url("../img/overlay image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 626, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__micro-title {
+  margin-top: 111px;
+  color: #D5D5D5;
+}
+
+/* line 630, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__title {
+  margin-top: 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+/* line 640, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__top-content {
+  display: flex;
+}
+
+/* line 643, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__top-img {
+  margin-top: -80px;
+}
+
+/* line 647, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__status {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+/* line 652, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 237px;
+  height: 76px;
+}
+
+/* line 659, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__info {
+  margin-left: 11px;
+  max-width: 150px;
+  height: 100%;
+}
+
+/* line 664, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__micro-title {
+  color: #D5D5D5;
+}
+
+/* line 667, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__big-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #C40B0B;
+}
+
+/* line 675, ../../Documents/GitHub/Car/src/scss/style.scss */
+.impact__text {
+  color: #F5F5F5;
+}
+
+/* line 681, ../../Documents/GitHub/Car/src/scss/style.scss */
+.appointment__container {
+  min-height: 150px;
+  margin-top: -78px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 689, ../../Documents/GitHub/Car/src/scss/style.scss */
+.appointment__btn {
+  width: 211px;
+  height: 48px;
+}
+
+/* line 693, ../../Documents/GitHub/Car/src/scss/style.scss */
+.appointment__text {
+  max-width: 562px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #02133C;
+}
+
+/* line 707, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__content {
+  margin-top: 88px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 712, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__company {
+  max-width: 235px;
+}
+
+/* line 714, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__company-text {
+  margin-top: 23px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #4B4B4B;
+}
+
+/* line 724, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__company-link {
+  display: flex;
+  margin-top: 33px;
+}
+
+/* line 728, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__company-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 18px;
+}
+
+/* line 735, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__link-title {
+  margin-top: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #4B4B4B;
+}
+
+/* line 745, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__link-items {
+  margin-top: 28px;
+}
+
+/* line 748, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__link-item {
+  display: flex;
+  margin-top: 16px;
+}
+
+/* line 752, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__link-text {
+  margin-top: 11px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #4B4B4B;
+}
+
+/* line 762, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__link-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 766, ../../Documents/GitHub/Car/src/scss/style.scss */
+.info__link-miniText {
+  margin-left: 18px;
+  max-width: 200px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #4B4B4B;
+}
+
+/* line 780, ../../Documents/GitHub/Car/src/scss/style.scss */
+.footer {
+  margin-top: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #02133C;
+  min-height: 60px;
+}
+
+/* line 787, ../../Documents/GitHub/Car/src/scss/style.scss */
+.footer__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.15px;
+  color: #959595;
+}
+
+/* line 799, ../../Documents/GitHub/Car/src/scss/style.scss */
 .title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
   line-height: 42px;
-  color: #02133C;
 }
 
-/* line 485, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 806, ../../Documents/GitHub/Car/src/scss/style.scss */
 .text {
   font-family: Roboto;
   font-style: normal;
@@ -631,10 +1017,9 @@ html, body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.15px;
-  color: #4B4B4B;
 }
 
-/* line 494, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 814, ../../Documents/GitHub/Car/src/scss/style.scss */
 .micro-title {
   display: flex;
   font-family: Roboto;
@@ -643,11 +1028,9 @@ html, body {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: #4B4B4B;
 }
 
-/* line 505, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 823, ../../Documents/GitHub/Car/src/scss/style.scss */
 .micro-title-img {
   width: 17px;
   height: 16px;
@@ -655,7 +1038,7 @@ html, body {
   margin-right: 16px;
 }
 
-/* line 512, ../../Documents/GitHub/Car/src/scss/style.scss */
+/* line 830, ../../Documents/GitHub/Car/src/scss/style.scss */
 .mini-title {
   font-family: Roboto;
   font-style: normal;

@@ -6,7 +6,8 @@
 	    <link rel="stylesheet" href="css/style.css" type="text/css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="js/video.js"></script>
-
+        <script src="js/menu.js"></script>
+        <script src="js/jarallax.js"></script>
         <title>CARMASTER</title>
     </head>
     <body>
@@ -33,15 +34,31 @@
                 </div>
                 <div class="logo__menu">
                     <div class="logo__menu-items">
-                        <div class="logo__menu-item logo__menu-item-parent">Services <div class="logo__menu-item-icon"></div> </div>
-                        <div class="logo__menu-item">Specials</div>
+                        <div class="logo__menu-item logo__menu-item-parent">Services <img src="img/expand_more.png">
+                            <div class="logo__menu-dopItems">
+                                <div class="logo__menu-dopItem">Multi Point Inspections </div>
+                                <div class="logo__menu-dopItem">Auto Repair</div>
+                                <div class="logo__menu-dopItem">Auto Maintenance</div>
+                                <div class="logo__menu-dopItem">Tires </div>
+                            </div>
+                        </div>
+                        <div class="logo__menu-item">Specials
+                        </div>
                         <div class="logo__menu-item">Estimates</div>
                         <div class="logo__menu-item">Reviews</div>
-                        <div class="logo__menu-item">Shop <div class="logo__menu-item-icon"></div> </div>
+                        <div class="logo__menu-item">Shop <img src="img/expand_more.png">
+                            <div class="logo__menu-dopItems">
+                                <div class="logo__menu-dopItem">Oil </div>
+                                <div class="logo__menu-dopItem">Transmission</div>
+                                <div class="logo__menu-dopItem">Alignments</div>
+                                <div class="logo__menu-dopItem">Engines </div>
+                            </div>
+                        </div>
                         <div class="logo__menu-item">About</div>
                     </div>
                     <div class="logo__menu-utility">
                         <div class="logo__menu-search"></div>
+                        <input class="logo__menu-inpat">
                         <div class="logo__menu-shop"><div class="logo__schet">3</div></div>
                     </div>
                 </div>
@@ -52,6 +69,7 @@
                 </div>
             </div>
         </div>
+
 
         <div class="about">
             <div class="container about__container">
@@ -196,9 +214,175 @@
                             
                         </div>
                     </div>
+                    <div class="recording__info">
+                        <div class="recording__info-title">Maxime placeat facere possimus omnis </div>
+                        <div class="recording__info-bigText">17k</div>
+                        <div class="recording__info-text">customers served (and counting)</div>
+                    </div>
+                        
                 </div>
             </div>
             <div class="recording__bottom-fon"><img src="img/service/Gears2.png"></div>
+        </div>
+
+
+
+        <div class="customers">
+            <div class="container customers__container">
+                <div class="customers__content">
+                    <div class="customers__content-text">
+                        <div class="micro-title customers__micro-title">
+                            <div class="micro-title-img promise__micro-title-img"></div>
+                            OUR CUSTOMERS
+                        </div>
+                        <div class="title customers__title">Illum qui dolorem eum quo voluptas ut distinctio</div>
+                    </div>
+                    <div class="customers__info">
+                        <div class="customers__layout">
+                            <div class="text customers__text">“Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt
+                                ut labore et dolore ex magna
+                                aliqua. Ut enim illum ad minim
+                                veniam, quis ea exercitation
+                                ullamco cillum ut enim dolore.”
+                            </div>
+                            <div class="customers__about">
+                                <div class="customers__img"><img src="img/Ellipse 2.png"></div>
+                                <div class="customers__name">Cullen Bohannon</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customers__info">
+                        <div class="customers__layout">
+                            <div class="text customers__text">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ipsam voluptatem aspernatur.”
+                            </div>
+                            <div class="customers__about">
+                                <div class="customers__img"><img src="img/Ellipse 1.png"></div>
+                                <div class="customers__name">Jennifer Thomas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="impact">
+            <div class="container impact__container">
+                <div class="impact__top-content">
+                    <div class="impact__top-item">
+                        <div class="micro-title impact__micro-title">
+                            <div class="micro-title-img impact__micro-title-img"></div>
+                            OUR IMPATC
+                        </div>
+                        <div class="title impact__title">Nemo enim ipsam voluptatem quia voluptas</div>
+                    </div>
+                    <div class="impact__top-item">
+                        <div class="impact__top-img"><img src="img/pexels-photo-2811496 1.png"></div>
+                    </div>
+                </div>
+                <div class="impact__status">
+                    <div class="impact__item">
+                        <div class="impact__item-img"><img src="img/impact/car_oil-24x.svg"></div>
+                        <div class="impact__info">
+                            <div class="impact__big-text">16k+</div>
+                            <div class="text impact__text">Oil changes</div>
+                        </div>
+                    </div>
+                    <div class="impact__item">
+                        <div class="impact__item-img"><img src="img/impact/car_transmission_24x.svg"></div>
+                        <div class="impact__info">
+                            <div class="impact__big-text">13k+</div>
+                            <div class="text impact__text">Transmission repairs</div>
+                        </div>
+                    </div>
+                    <div class="impact__item">
+                        <div class="impact__item-img"><img src="img/impact/car_alignment_24x.svg"></div>
+                        <div class="impact__info">
+                            <div class="impact__big-text">15k+</div>
+                            <div class="text impact__text">Alignments made</div>
+                        </div>
+                    </div>
+                    <div class="impact__item">
+                        <div class="impact__item-img"><img src="img/impact/car_engine_2_24x.svg"></div>
+                        <div class="impact__info">
+                            <div class="impact__big-text">11,500+</div>
+                            <div class="text impact__text">Engines repaired</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="appointment">
+            <div class="container appointment__container">
+                <div class="appointment__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                <div class="btn appointment__btn">
+                    <div class="btn-text">Learn More</div>
+                    <div class="btn-icon"><img src="img/forward.svg"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="container info__container">
+                <div class="info__content">
+                    <div class="info__company">
+                        <div class="info__company-img"><img src="img/info/Logo-Placeholder-5.svg"></div>
+                        <div class="info__company-text">This is a blurb about the company sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. </div>
+                        <div class="info__company-link">
+                            <div class="info__company-icon"><img src="img/info/facebook 1.svg"></div>
+                            <div class="info__company-icon"><img src="img/info/twitter 1.svg"></div>
+                            <div class="info__company-icon"><img src="img/info/instagram.svg"></div>
+                            <div class="info__company-icon"><img src="img/info/youtube 1.svg"></div>
+                        </div>
+                    </div>
+                    <div class="info__link">
+                        <div class="info__link-title">EXPLORE LINKS</div>
+                        <div class="info__link-items">
+                            <div class="info__link-text">About</div>
+                            <div class="info__link-text">Services</div>
+                            <div class="info__link-text">Specials</div>
+                            <div class="info__link-text">Estimates</div>
+                        </div>
+                    </div>
+                    <div class="info__link">
+                        <div class="info__link-title">PROGRAMS</div>
+                        <div class="info__link-items">
+                            <div class="info__link-text">Reviews</div>
+                            <div class="info__link-text">Shop</div>
+                            <div class="info__link-text">Careers</div>
+                            <div class="info__link-text">FAQs</div>
+                        </div> 
+                    </div>
+                    <div class="info__link">
+                        <div class="info__link-title">CONTACT</div>
+                        <div class="info__link-items">
+                            <div class="info__link-item">
+                                <div class="info__link-icon"><img src="img/info/place_24px.svg"></div>
+                                <div class="info__link-miniText">321 Pikes Place Parkway Seattle, WA 54321</div>
+                            </div>
+                            <div class="info__link-item">
+                                <div class="info__link-icon"><img src="img/info/smartphone_24px.svg"></div>
+                                <div class="info__link-miniText">(555) 765-4321</div>
+                            </div>
+                            <div class="info__link-item">
+                                <div class="info__link-icon"><img src="img/info/email_24px.svg"></div>
+                                <div class="info__link-miniText">Info@company.com</div>
+                            </div>
+                            <div class="info__link-item">
+                                <div class="info__link-icon"><img src="img/info/timer_24px.svg"></div>
+                                <div class="info__link-miniText">Mon - Sat:  7:000 am - 6:00 pm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__text">Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</div>
+            <div class="footer__text">© 2018 Company.   Privacy Policy | Terms & Conditions</div>
         </div>
 
     </body>
