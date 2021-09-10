@@ -8,7 +8,9 @@ $(document).ready(function(){
     })
 
     $('.logo__menu-search').click(function(){
-        $(".logo__menu-inpat").show();
+                $(".logo__menu-in").animate({
+                    width: "show"
+                });
     })
     $('.logo').jarallax({
         speed: 0.2
