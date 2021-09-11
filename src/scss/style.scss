@@ -296,13 +296,16 @@ html,body{
         right: 0;
     }
     &__micro-title{
+        color: #4B4B4B;
         padding-top: 100px;
     }
     &__title{
         max-width: 583px;
         margin-top: 33px;
+        color: #02133C;
     }
     &__text{
+        color: #4B4B4B;
         margin-top: 36px;
     }
     &__img{
@@ -318,6 +321,7 @@ html,body{
 .promise{
     margin-top:230px;
     &__title{
+        color: #02133C;
         margin-top: 33px;
     }
     &__cards{
@@ -333,7 +337,11 @@ html,body{
         }
     }
     &__text{
+        color: #4B4B4B;
         margin-top: 20px;
+    }
+    &__micro-title{
+        color: #4B4B4B;
     }
 }
 .video{
@@ -408,9 +416,11 @@ html,body{
         bottom: 0;
     }
     &__micro-title{
+        color: #4B4B4B;
         padding-top: 108px;
     }
     &__title{
+        color: #02133C;
         margin-top: 33px;
     }
     &__items{
@@ -443,9 +453,11 @@ html,body{
     }
 
     &__mini-title{
+        color: #02133C;
         margin-top: 33px;
     }
     &__text{
+        color: #4B4B4B;
         max-width: 235px;
         margin-top: 20px;
     }
@@ -565,22 +577,31 @@ html,body{
         height: 640px;
     }
     &__title{
+        color: #02133C;
         padding-top: 76px;
     }
     &__btn{
+        float: right;
         margin-right: 0;
         margin-top: 39px;
-        width: 145px;
+        width: 211px;
         height: 44px;
     }
 }
 
 .tabs{
     position: relative;
-    z-index: 5;
+
     margin-top: -80px;
     min-height: 860px;
+    &__bottom-fon{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
     &__container{
+        position: relative;
+        z-index: 1;
         background: #FFFFFF;
         height: 700px;
     }
@@ -641,7 +662,11 @@ html,body{
         }
     }
     &__title{
+        color: #02133C;
         margin-top: 33px;
+    }
+    &__text{
+        color: #4B4B4B;
     }
     &__info{
         padding-top: 49px;
